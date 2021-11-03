@@ -1,0 +1,12 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000EADA3    Nov  1 14:02:26 2021    /home/andreas/workdir/figkey/tmp/SPI-Multiboot/Kintex7_ECO_R5/Golden/vivado/vivado_proj/vivado_proj.runs/impl_1/Golden.bit
+0x00800000    0x008EB8E3    Nov  1 14:11:45 2021    /home/andreas/workdir/figkey/tmp/SPI-Multiboot/Kintex7_ECO_R5/Update/vivado/vivado_proj/vivado_proj.runs/impl_1/Update.bit
