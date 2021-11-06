@@ -83,6 +83,7 @@ write_mem_info -force $bitdir/system_wrapper.mmi
 write_hw_platform -fixed -force -file ./system_wrapper.xsa
 #Export the implemented hardware system to the Vitis environment
 #write_hw_platform -fixed -force -file ../vitis/xsa/system_wrapper.xsa
+#exec zip -u  -j system_wrapper.xsa ./output/system_wrapper.bit ./output/system_wrapper.mmi
 #######
 #exit
 #######
