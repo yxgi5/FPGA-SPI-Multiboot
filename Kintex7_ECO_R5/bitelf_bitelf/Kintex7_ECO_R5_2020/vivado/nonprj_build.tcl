@@ -73,12 +73,13 @@ report_drc -file $outputDir/post_imp_drc.rpt
 
 #write_bitstream -bin_file -force $bitdir/Golden.bit
 #write_bitstream -force $bitdir/Golden.bit
-#write_debug_probes -force $bitdir/Golden.ltx;
+#write_debug_probes -force $bitdir/Golden.ltx
 
 write_bitstream -force $bitdir/system_wrapper.bit
+write_mem_info -force $bitdir/system_wrapper.mmi
 #write_sysdef -hwdef .srcs/sources_1/bd/system/synth/system.hwdef -bitfile ./output/system_wrapper.bit  -file system_wrapper.sysdef
 #write_hwdef -force ./system_wrapper.hwdef
-#write_sysdef -hwdef ./system_wrapper.hwdef -bitfile ./output/system_wrapper.bit  -file system_wrapper.sysdef
+#write_sysdef -hwdef ./system_wrapper.hwdef -bitfile ./output/system_wrapper.bit -meminfo ./output/system_wrapper.mmi -file system_wrapper.sysdef
 write_hw_platform -fixed -force -file ./system_wrapper.xsa
 #Export the implemented hardware system to the Vitis environment
 #write_hw_platform -fixed -force -file ../vitis/xsa/system_wrapper.xsa
