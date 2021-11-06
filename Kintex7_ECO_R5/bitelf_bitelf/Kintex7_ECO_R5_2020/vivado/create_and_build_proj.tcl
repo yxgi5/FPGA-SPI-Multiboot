@@ -162,6 +162,7 @@ write_bd_layout -format pdf -orientation portrait -force ./$BD_name.pdf
 ######
 #exit
 ######
+#open_project ./zPL.xpr
 
 # Generate the output products
 #generate_target all [get_files ./$project_name/$project_name.srcs/sources_1/bd/$BD_name/$BD_name.bd]
