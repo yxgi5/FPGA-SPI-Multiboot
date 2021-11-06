@@ -157,7 +157,7 @@ update_compile_order -fileset sources_1
 
 #write_bd_layout -format pdf -orientation portrait -force ./$BD_name.pdf
 
-#set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
 
 ######
 #exit
